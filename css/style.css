@@ -1,0 +1,170 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Підключення шрифтів */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair%20Display:wght@400&display=swap"); */
+
+/* Основні стилі */
+
+/* Значення за замовченням  */
+body {
+	font-family: "Roboto", sans-serif;
+	color: #204065;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: clip;
+}
+
+/* ------------------------------------------------------------------- */
+[class*="__container"] {
+	max-width: 1170px;
+	margin: 0 auto;
+
+}
+
+/* .header {} */
+
+/* .header__top {} */
+
+.header__menu {
+	position: sticky;
+	top: 0;
+}
+
+
+.top-header {
+	padding: 50px 0;
+}
+
+.top-header__container {}
+
+.top-header__inner {
+	line-height: 50px;
+}
+
+.top-header__social {
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+.top-header__logo {
+	display: inline-block;
+}
+
+.block {
+	height: 70px;
+	width: 100%;
+	background-color: red;
+	position: sticky;
+	top: 0;
+}
+
+.top-header__search {
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+
+/* .social {} */
+
+.social__item {
+	display: inline-block;
+	vertical-align: bottom;
+	background-color: #f3f3f3;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	transition: background-color 0.3s;
+}
+
+.social__item:hover {
+	background-color: #12b48b;
+}
+
+.social__item:nth-child(2) {
+	margin: 0 10px;
+}
+
+.social__link {
+	position: relative;
+	height: 50px;
+}
+
+.social__link svg {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(50%, -50%);
+}
+
+.logo {}
+
+.search {
+	max-width: 300px;
+	position: relative;
+}
+
+.search__input {
+	height: 50px;
+	background-color: #f3f3f3;
+	padding: 10px 50px 10px 15px;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.search__btn {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.menu-header {
+	background-color: #f3f3f3;
+	padding: 15px 0;
+	text-align: center;
+	position: sticky;
+	top: 0;
+
+}
+
+.menu-header__container {
+	position: sticky;
+	top: 0;
+}
+
+.menu-header__inner {}
+
+.menu-header__items {}
+
+.menu-header__item {
+	display: inline-block;
+}
+
+.menu-header__link-active {
+	background-color: #12b48b;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.menu-header__link {
+	padding: 15px 24px;
+	font-size: 18px;
+	transition: color 0.3s;
+}
+
+.menu-header__link:hover {
+	color: #12b48b;
+}
+
+.menu-header__link-active:hover {
+	color: #204065;
+}
