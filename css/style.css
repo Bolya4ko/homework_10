@@ -344,14 +344,14 @@ body {
 	padding-bottom: 100px;
 }
 
-.services__list-item {
+.services__item {
 	padding-left: 42px;
 	position: relative;
 	height: 32px;
 	line-height: 2.3;
 }
 
-.services__list-item::before {
+.services__item::before {
 	content: '';
 	position: absolute;
 	width: 32px;
@@ -364,10 +364,10 @@ body {
 	background-size: contain;
 }
 
-.services__list-item:not(:last-child) {
+.services__item:not(:last-child) {
 	margin-bottom: 15px;
 }
 
-.services__list-item--active.services__list-item::before {
+.services__item--active.services__item::before {
 	background-image: url('../img/icon_check.svg');
 }
