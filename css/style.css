@@ -132,7 +132,7 @@ body {
 	display: inline-block;
 }
 
-.menu-header__link-active {
+.menu-header__link--active {
 	background-color: #12b48b;
 	border-radius: 10px;
 	color: #fff;
@@ -151,7 +151,7 @@ body {
 
 }
 
-.menu-header__link-active:hover {
+.menu-header__link--active:hover {
 	color: #204065;
 }
 
@@ -172,7 +172,7 @@ body {
 	transition: opacity 0.3s;
 }
 
-.menu-header__link-active:hover+*,
+.menu-header__link--active:hover+*,
 .submenu:hover {
 	opacity: 1;
 	visibility: visible;
