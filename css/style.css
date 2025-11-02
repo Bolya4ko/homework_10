@@ -289,7 +289,7 @@ body {
 }
 
 .face-block__item-block:hover .face-block__item-title,
-.face-block__item-block:hover .face-block__link {
+.face-block__item-block:hover .face-block__text {
 	color: #000;
 }
 
