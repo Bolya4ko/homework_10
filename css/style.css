@@ -301,7 +301,7 @@ body {
 	box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.4);
 }
 
-.face-block__link {
+.face-block__text {
 	position: absolute;
 	left: 0;
 	right: 0;
