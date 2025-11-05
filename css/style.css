@@ -227,112 +227,141 @@ body {
 	color: #204065;
 }
 
-/* face-block */
-.face-block {
-	font-family: "Playfair Display", sans-serif;
-	padding: 46px 0 65px;
-	text-align: center;
-	font-weight: 400;
-	line-height: 1.35;
+/* product-category */
+.product-category {
+	padding: 50px 0;
+	margin-bottom: 77px;
+	font-family: "Playfair Display", serif;
+	color: #000000;
+	background-color: #ffffff;
 }
 
-.face-block__container {
+.product-category__container {
 	max-width: 1000px;
+	padding-bottom: 66px;
+	border-bottom: 1px solid #837F7F;
 }
 
-.face-block__title {
-	font-size: 20px;
-	color: #000;
+.product-category__title {
 	margin-bottom: 48px;
+	font-size: 27px;
+	text-align: center;
+
 }
 
-.face-block__items {
-	margin: 0 -64px;
+.product-category__items {
 	font-size: 0;
+	margin: 0 -6.2%;
+}
+
+.product-category__items:not(:last-child) {
 	margin-bottom: 77px;
 }
 
-.face-block__item-block {
-	padding: 0 64px;
-	position: relative;
-	color: #fff;
-	font-size: 17px;
+.product-category__items>* {
+	font-size: 16px;
+}
+
+.categories-cards__cards:not(:last-child) {
+	margin-bottom: 77px;
+}
+
+.category-card {
 	display: inline-block;
 	width: 33.333%;
+	padding: 0 5.53%;
+	text-align: center;
+	color: #ffffff;
 }
 
-.face-block__item-link {
-	transition: box-shadow 0.3s;
+.category-card__inner {
+	position: relative;
+	overflow: hidden;
 }
 
-.face-block__item-link::before {
+.category-card__inner::before {
+	content: "";
 	position: absolute;
-	content: '';
-	background-color: rgba(0, 0, 0, 0.20);
 	top: 0;
-	width: 250px;
-	height: 100%;
+	left: 0;
 	z-index: 2;
-	transition: all 0.3s;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+
+	/* трішки анімації для hover ефекту */
+	transition: background-color 0.3s;
 }
 
+.category-card__inner:hover::before {
+	background-color: rgba(0, 0, 0, 0.6);
+}
 
-.face-block__item-title {
+.category-card__img {
+	position: relative;
+
+
+	padding-bottom: 125.5%;
+
+	width: 100%;
+	height: 100%;
+}
+
+.category-card__img img {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	/* це ще не проходили але можете загуглити */
+	object-fit: cover;
+}
+
+/* загальні стилі для елементів */
+.category-card__title,
+.category-card__text {
+	position: absolute;
+	left: 0;
+	z-index: 3;
+
+	width: 100%;
+	padding: 0 14px;
+}
+
+.category-card__title {
+	top: 42.3%;
+
 	font-size: 28px;
+}
+
+.category-card__text {
 	position: absolute;
-	left: 0;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 3;
-	transition: color 0.3s;
-}
-
-.face-block__item-block:hover .face-block__item-title,
-.face-block__item-block:hover .face-block__text {
-	color: #000;
-}
-
-.face-block__item-link:hover.face-block__item-link::before {
-	background-color: rgba(0, 0, 0, 0);
-}
-
-.face-block__item-link:hover {
-	box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.4);
-}
-
-.face-block__text {
-	position: absolute;
-	left: 0;
-	right: 0;
 	bottom: 12px;
-	z-index: 3;
-	transition: color 0.3s;
+	font-size: 17px;
 }
 
-.face-block__btn {
-	background-color: transparent;
-	font-weight: 400;
-	font-size: 14px;
-	color: #000;
-	border: 1px solid #000;
-	padding: 9px 15px;
-	min-width: 133px;
-	min-height: 39px;
-	margin-bottom: 66px;
-	transition:
-		translate 0.3s,
-		background-color 0.3s;
+.product-category__wrapper-button {
+	text-align: center;
 }
 
-.face-block__btn:hover {
-	translate: 3px 5px;
-	background-color: #fef6f6db;
-	box-shadow: -2px -3px 10px;
+.product-category__btn {
+	display: inline-block;
+	min-width: 134px;
+	border: 1px solid #000000;
+	padding: 10px 20px;
+	transition: all 0.3s ease;
 }
 
-.face-block__decor {
-	border-bottom: 1px solid #837F7F;
+
+
+.product-category__btn:hover {
+	color: #ffffff;
+	background-color: rgb(38, 36, 36);
 }
 
 .services {
@@ -347,8 +376,8 @@ body {
 .services__item {
 	padding-left: 42px;
 	position: relative;
-	height: 32px;
-	line-height: 2.3;
+	min-height: 32px;
+	line-height: 1.7;
 }
 
 .services__item::before {
@@ -362,6 +391,7 @@ body {
 	background-image: url('../img/icon_no-check.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
+	top: 10px;
 }
 
 .services__item:not(:last-child) {
